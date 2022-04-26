@@ -1,0 +1,322 @@
+/* CONFIGURAÇÃO BÁSICA DO CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: "Open Sans";
+}
+
+.center{
+    max-width: 1280px;
+    width: 100%;
+    margin:0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* CONFIGURAÇÃO DO ARQUIVO ATUAL DO SITE */
+/* Começa a configuração do Header */
+.header {
+    padding: 0 2%;
+    width: 100%;
+    height: 80px;
+    background-color: #212343;
+}
+
+.header img {
+    margin: 20px;
+}
+
+/* ****************************************** */
+/* Começa a configuração do container-banner */
+.container-banner {
+    padding: 0 2%;
+    width: 100%;
+    height: 568px;
+    background-image: url('../images/header_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-banner > .center {
+    height: 100%;
+    /* text-align: right; foi aplicado aqui o 'text align' e no class form o 'display: inline-block' ao invés do  *//* float: right; */
+}
+
+.container-list {
+    margin-top: 40px;
+    color: white;
+    float: left;
+    text-align: justify;
+    width: 500px;
+    height: 270px;
+    background-color: rgba(33,35,67, 0.7);
+}
+
+.container-list ul{
+    list-style-position: inside;
+    margin: 30px 10px;
+}
+
+.container-list ul li {
+    padding: 15px 0;
+}
+
+.form {
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: calc(100% + 30px);
+    background-color: white;
+    /* display: inline-block; */
+    float: right;
+    position: relative;
+    top: -15px;
+    border: 8px solid rgba(120, 120, 120, 0.7);
+    background-clip: padding-box;
+    /* background-origin: --> tem o mesmo conceito, mas para imagem */
+}
+
+.form h2 {
+    font-weight: normal;
+    color: #999999;
+    font-size: 20px;
+}
+
+.input-container, .form p {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.input-container span, .form p{
+    display: inline-block;
+    width: 100%;
+    color: #bbbbbb;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.input-container input[type=text],
+.input-container input[type=email],
+.input-container input[type=tel] {
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 2px solid #cccccc;
+}
+
+form input[type=submit] {
+    color: white;
+    width: 280px;
+    height: 56px;
+    border: 0;
+    font-size: 25px;
+    border-bottom: 5px solid #4a5097;
+    background-color: #363a6d;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #131636;
+}
+
+/* ****************************************** */
+/* Começa a configuração do container-2 */
+.container-2 {
+    padding: 40px 2%;
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-weight: normal;
+}
+
+.container-2 p {
+    width: 100%;
+    max-width: 768px;
+    display: inline-block;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.arrow {
+    position: relative;
+    top: 75px;
+    left: 50%;
+    margin-left: -20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/arrow.png');
+    background-size: 100% 100%;
+}
+
+/* ****************************************** */
+/* Começa a configuração do Section-1 */
+.section-1 {
+    padding: 90px 2%;
+}
+
+.section-1 h2 {
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
+}
+
+.container-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-single {
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+}
+
+.container-single p {
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+.container-single img {
+    width: 70px;
+}
+
+.footer {
+    padding: 30px 0;
+    border-top: 4px solid #888888;
+    text-align: center;
+    color: #888888;
+}
+
+.footer p {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+/* ****************************************** */
+/* Começa as Medias Queries */
+/* Media screen max-width: 1024px */
+@media screen and (max-width: 1024px) {
+    /* Começa a configuração do Header */
+    .header {
+        padding: 15px 0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .header img {
+        margin: 0;
+    }
+
+    /* Começa a configuração do container-banner */
+    .container-banner {
+        padding: 40px 2%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .container-list {
+        margin-top: 0;
+        padding: 30px 0;
+        float: left;
+        width: 40%;
+        /* display: inline-block; */
+        max-width: 500px;
+        height: auto;
+    }
+
+    .form {
+        margin-top: 30px;
+        padding: 10px;
+        max-width: 400px;
+        width: 60%;
+        height: 100%;
+        /* display: inline-block; */
+        float: right;
+        top: 0;
+    }
+
+    .input-container input[type=text],
+    .input-container input[type=email],
+    .input-container input[type=tel] {
+        height: 55px;
+        width: 100%;
+    }
+
+    form input[type=submit] {
+        color: white;
+        max-width: 280px;
+        width: 100%;
+        height: 56px;
+    }
+}
+
+/* ****************************************** */
+/* Media screen max-width: 768px */
+@media screen and (max-width: 768px) {
+    /* Começa a configuração do container-banner */
+    .container-list {
+        margin-top: 0;
+        float: none;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .form {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        margin-top: 20px;
+    }
+
+    /* Começa a configuração do container02 */
+    .container-2 {
+        padding: 0 4%;
+    }
+
+    /* Começa a configuração do section-1 */
+    .container-single {
+        float: none;
+        display: inline-block;
+        max-width: 600px;
+        width: 100%;
+        padding: 30px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
